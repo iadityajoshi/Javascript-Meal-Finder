@@ -13,7 +13,7 @@ function searchMeal(event){
         return response.json();
     })
     .then((data)=>{
-        resultName.innerHTML = `<h2>Search result for ${searchText}</h2>`;
+        resultName.TextContent = `Search results for ${searchText}`; //not working
         
         if(data.meals===null){
             resultName.innerHTML = `<h2>No resul found for ${searchText}`; //not working??
