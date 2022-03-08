@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meal Finder</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <h1>Meal Finder</h1>
+    <div class="search">
+      <form class="search" id="submit">
+        <input type="text" id="search-bar" placeholder="Search for meal you want" />
+        <button class="search-btn" type="submit">
+          <i class="fa fa-search"></i>
+        </button>
+      </form>
+      <button class="random-btn">
+        <i class="fa fa-random"></i>
+      </button>
+    </div>
+      <!-- show counts or message if no result is found -->
+    <div class="result">
+      <p>Results</p>
+    </div>
+      <!-- show results of search -->
+    <div id="meal" class="meal"></div>
+      <!-- single product will be displayed after clicking on random button -->
+    <div id="random_result"></div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
