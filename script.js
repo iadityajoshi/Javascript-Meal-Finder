@@ -24,10 +24,10 @@ function searchMeal(event){
                 (meal)=>`
                 <div class = 'meal_display'>                
                     <div class="meal-info">
-                    <h3>${meal.strMeal}</h3>
                     <a href="${meal.strYoutube}" target="blank"> 
                     <img src = "${meal.strMealThumb}" alt="${meal.strMeal}">
                     </a>
+                    <h3>${meal.strMeal}</h3>
                     </div>                
                 </div>
                 `
