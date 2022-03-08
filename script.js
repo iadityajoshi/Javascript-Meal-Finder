@@ -22,12 +22,12 @@ function searchMeal(event){
         else{
             mealEl.innerHTML= data.meals.map(
                 (meal)=>`
-                <div class = 'meal_display'>
-                <img src = "${meal.strMealThumb}" alt="${meal.strMeal}" </img>
-                
+                <div class = 'meal_display'>                
                     <div class="meal-info">
                     <h3>${meal.strMeal}</h3>
-                    <a href="${meal.strYoutube}" target="blank">Open Recipe</a>
+                    <a href="${meal.strYoutube}" target="blank"> 
+                    <img src = "${meal.strMealThumb}" alt="${meal.strMeal}">
+                    </a>
                     </div>                
                 </div>
                 `
