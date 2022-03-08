@@ -1,12 +1,9 @@
-/* *{
-    box-sizing: border-box;
-} */
-
 h1{
     text-align: center;
+    font-size: 55px;
 }
 
-bodY{
+body{
     background: #2d2020;
     color: #fff;
     font-family: 'Open Sans', sans-serif;
@@ -16,12 +13,6 @@ bodY{
     margin: auto;
     max-width: 70%;
     text-align: center;
-    /* display: flex;
-    flex-direction: column; */
-    /* justify-content: center;
-    align-items: center;
-    text-align: center; */
-    /* background-color: white; */
 }
 
 .search{
@@ -62,8 +53,6 @@ input{
 .meal{
     display: flex;
     flex-wrap: wrap;
-    /* justify-content: space-between; */
-    /* background-color: red; */
 }
 
 .meal_display{
@@ -76,21 +65,13 @@ input{
     height: 200px;
     border: 4px white solid;
     border-radius: 10px;
+    margin-top: 15px;
 }
 
-/* .meal_info{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    background: black;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: opacity 0.2s ease-in;
-    opacity: 0;
-} */
+.meal_display h3{
+    margin-block-end: 0;
+    font-size: 14px;
+}
+
 
 
