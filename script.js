@@ -8,8 +8,6 @@ function searchMeal(event){
     event.preventDefault();
     const searchText = search.value;
 
-    // if(searchText.trim()){fetch}
-
     fetch(`https://themealdb.com/api/json/v1/1/search.php?s=`+ searchText)
     .then((response)=>{
         return response.json();
@@ -29,18 +27,17 @@ function searchMeal(event){
                 
                     <div class="meal-info">
                     <h3>${meal.strMeal}</h3>
-                    <a href="{${meal.strYoutube}}" target="blank">Open Recipe</a>
+                    <a href="${meal.strYoutube}" target="blank">Open Recipe</a>
                     </div>                
                 </div>
                 `
-            ).join(' ');
+            ).join(' ');         
             }
-            // console.log(data);
         });
     };
 
     form.addEventListener('submit', searchMeal);
-    // mealEl.addEventListener('click', )
+  
 
 
 
