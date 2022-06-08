@@ -13,10 +13,10 @@ function searchMeal(event){
         return response.json();
     })
     .then((data)=>{
-        resultName.TextContent = `Search results for ${searchText}`; //not working
+        resultName[0].TextContent = `Search results for ${searchText}`; 
         
         if(data.meals===null){
-            resultName.innerHTML = `<h2>No resul found for ${searchText}`; //not working??
+            resultName[0].innerHTML = `<h2>No resul found for ${searchText}`; 
             alert(`No Result Found for ${searchText}`);
         }
         else{
@@ -37,8 +37,3 @@ function searchMeal(event){
     };
 
     form.addEventListener('submit', searchMeal);
-  
-
-
-
-
