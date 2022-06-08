@@ -3,6 +3,7 @@ const form = document.getElementById('submit');
 const search = document.getElementById('search-bar');
 const resultName = document.getElementsByClassName('result');
 const mealEl = document.getElementById('meal');
+alert('Try searching for keywords you want like veg, Cheescake, curry, rice etc...');
 
 function searchMeal(event){
     event.preventDefault();
